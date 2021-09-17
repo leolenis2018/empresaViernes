@@ -42,7 +42,7 @@ public class Empresa {
                     //buscar el next line
                     //con arraylis no tengo que poner condicional
                     //contador= 0
-                    if (contador <= 10) 
+                    if (contador <= 10) {
                         empleados[contador] = new Empleado();
                         System.out.println("Digite el id del empleado:");
                         empleados[contador].setId(entrada.nextInt());
@@ -61,17 +61,17 @@ public class Empresa {
 
                         System.out.println("Digita Direccion:");
                         empleados[contador].setDireccion(entrada.next());
+                    } else {
                         contador++;
-                    
-                    
-                        break;
-                    
-            
-            case 2:
+                    }
+                    break;
+
+                case 2:
                     break;
                 case 3:
-                    for(int i=0; i<contador; i++)
+                    for (int i = 0; i < contador; i++) {
                         System.out.println(empleados[i].getNombre());
+                    }
                     // para mostrar todo me sirve un ciclo for
                     break;
                 case 4:
@@ -85,7 +85,6 @@ public class Empresa {
 
         } while (opcion != 4);
 
-        }
-
-
     }
+
+}
